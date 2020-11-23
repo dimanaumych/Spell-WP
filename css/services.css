@@ -1,0 +1,644 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/Montserrat-Regular.woff') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Montserrat-Bold'), local('Montserrat-Bold'), url('../fonts/Montserrat-Bold.woff') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff')
+}
+@font-face {
+    font-family: 'Montserrat Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Montserrat-Medium'), local('Montserrat-Medium.woff'), url('../fonts/Montserrat-Medium.woff') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff')
+}
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat-SemiBold'), local('Montserrat-SemiBold.woff'), url('../fonts/Montserrat-SemiBold.woff') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Montserrat ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat-ExtraBold'), local('Montserrat-ExtraBold.woff'), url('../fonts/Montserrat-ExtraBold.woff') format('woff2'), url('../fonts/Montserrat-ExtraBold.woff') format('woff')
+}
+body{
+    width: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.header-banner-right-side-photo{
+	position: relative;	
+}
+
+.back-header-service{
+	position: absolute;
+    left: -140px;
+    top: -177px;
+    max-width: 1000px;
+    max-height: 890px;
+}
+
+.header-banner{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    font-family: Montserrat;
+}
+.header-banner-left-side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.header-banner-first-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-break: break-all;
+}
+.header-banner-second-title{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #000000;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: "Montserrat SemiBold";
+}
+.header-banner-text{
+margin-bottom: 50px;
+}
+.header-banner-right-side{
+    width: 100%;
+    height: 100%;
+}
+.call-back-button-header-banner{
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: linear-gradient(90deg, #E94E1B 50%, white 50%);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .5s ease;
+}
+.call-back-button-header-banner:before{
+    content: 'Заказать'; !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #E94E1B 50%, #E94E1B 50%);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+
+/*Бегущая строка*/
+marquee{
+    display: flex;
+    width:100%;
+    white-space:nowrap;
+    overflow-x:hidden;
+    margin-top: 100px;
+    font-family: Montserrat;
+}
+.run-text-filled{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+.run-text-empty{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #000000;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: "Montserrat ExtraBold";
+}
+.advantages-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    margin-top: 200px;
+}
+.left-side-advantages{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.orange-bg-wrapper{
+    position: relative;
+    width: 33%;
+}
+.advantages-bg-left{
+    width: 280px;
+    height: 280px;
+}
+.black-underline{
+    position: absolute;
+    width: 240px;
+    height: 10px;
+    background-color: black;
+    top: 223px;
+}
+.advantages-tassel-left{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 80px;
+    left: 60px;
+}
+.advantages-text-empty{
+    color: white;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 1px #E94E1B;
+    letter-spacing: 2px;
+    font-family: "Montserrat ExtraBold";
+}
+.advantages-text-filled{
+    color: #E94E1B;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.advantages-text{
+    margin-top: 25px;
+}
+.advantages-title-left{
+    position: absolute;
+    top: 120px;
+    left: 170px;
+    width: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.advantages-arrow-wrapper{
+    width: 33%;
+    position: relative;
+}
+.advantages-arrow-white-left{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    top: -18px;
+    z-index: 2;
+}
+.advantages-arrow-orange-left{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 45px;
+}
+.orange-text-wrapper{
+    width: 33%;
+}
+
+.left-side-advantages:nth-child(2n){
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-left: 20%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.left-side-advantages:nth-child(2n) .advantages-bg-left{
+    width: 220px;
+    height: 200px;
+}
+
+.left-side-advantages:nth-child(2n) .advantages-arrow-white-left{
+    transform: rotate(180deg);
+    top: 18px;
+    left: 90px;
+
+}
+.left-side-advantages:nth-child(2n) .advantages-arrow-orange-left{
+    transform: rotate(180deg);
+    top: 0px;
+}
+.left-side-advantages:nth-child(2n) .black-underline{
+    top: 198px;
+}
+.left-side-advantages:nth-child(2n) .advantages-tassel-left{
+    left: 110px;
+    top: 70px;
+
+}
+.left-side-advantages:nth-child(2n) .advantages-title-left{
+    left: -50px;
+    top: 100px;
+}
+
+.additional-info-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display:  flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.additional-info-section-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #E94E1B;
+}
+.additional-info-section-wrapper:last-child{
+    border-bottom: 1px solid #E94E1B;
+}
+.additional-info-title{
+    font-family: Montserrat;
+    font-weight: bold;
+    width: 80%;
+}
+.additional-info-button{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.additional-info-cancel{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: none;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+.additional-info-text{
+    display: none;
+    margin-top: 20px;
+    font-family: Montserrat;
+}
+	
+.ad-back {
+    position: absolute;
+    width: 365px;
+    left: -160px;
+    top: -19px;
+}
+.left-side-advantages:nth-child(2n) .ad-back{
+    position: absolute;
+    width: 350px;
+    left: -8px;
+    top: -67px;
+    transform: scale(-1, 1);
+}
+.ad-back-right {
+    position: absolute;
+    width: 350px;
+    left: -8px;
+    top: -67px;
+}
+
+.about-service-wrapper-full{
+	width: 100%;
+	background-image: url('/wp-content/themes/twt/images/info-back.png');
+}
+
+.about-service-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    justify-content: space-between;
+    margin-bottom: 150px;
+	
+}
+.about-service-text-empty{
+    color: white;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px #E94E1B;
+    letter-spacing: 2px;
+    font-family: "Montserrat ExtraBold";
+    text-transform: uppercase;
+}
+.about-service-text-filled{
+    color: #E94E1B;
+    font-family: "Montserrat ExtraBold";
+    font-size: 2.5rem;
+}
+.about-service{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Montserrat;
+    line-height: 25px;
+}
+.about-service-left{
+    width: 30%;
+    font-weight: bold;
+}
+.about-service-right{
+    width: 55%;
+}
+.first-orange-line{
+    width: 105px;
+    height: 3px;
+    background-color: #E94E1B;
+    margin-top: 50px;
+}
+.second-orange-line{
+    width: 105px;
+    height: 3px;
+    background-color: #E94E1B;
+    margin-top: 5px;
+}
+.third-orange-line{
+    width: 75px;
+    height: 3px;
+    background-color: #E94E1B;
+    margin-top: 5px;
+}
+
+
+
+.show-more{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mobile-menu-social{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-menu-social img{
+    width: 50px;
+    height: 50px;
+}
+@media (max-width: 1440px) {
+    .header-banner{
+        width: 1000px;
+    }
+
+    .advantages-wrapper {
+        width: 1000px;
+        margin-top: 100px;
+    }
+    .additional-info-wrapper {
+        width: 1000px;
+    }
+    .about-service-wrapper {
+        width: 1000px;
+    }
+    .steps_wrapper {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1024px) {
+	
+	.back-header-service {
+		position: absolute;
+		left: -33px;
+		top: -118px;
+		max-width: 511px;
+		max-height: 879px;
+	}
+	
+    .header-banner{
+        width: 760px;
+    }
+
+    .advantages-wrapper {
+        width: 760px;
+        margin-top: 100px;
+    }
+    .left-side-advantages{
+        width: 100%;
+    }
+    .left-side-advantages:nth-child(2n){
+        width: 100%;
+        margin-left: 0;
+    }
+    .advantages-arrow-white-left{
+        left: 50px;
+    }
+    .advantages-arrow-orange-left{
+        left: 95px;
+    }
+    .left-side-advantages:nth-child(2n) .advantages-arrow-orange-left {
+        transform: rotate(180deg);
+        top: 0px;
+        left: 45px;
+    }
+    .additional-info-wrapper {
+        width: 760px;
+    }
+    .about-service-wrapper {
+        width: 760px;
+    }
+    .steps_wrapper {
+        max-width: 760px;
+    }
+}
+@media (max-width: 768px) {
+    .header-banner{
+        width: 425px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .header-banner-left-side{
+        width: 80%;
+        margin-top: 50px;
+    }
+    .header-banner-right-side{
+        width: 100%;
+    }
+    .advantages-wrapper {
+        width: 425px;
+        margin-top: 100px;
+    }
+    .left-side-advantages, .left-side-advantages:nth-child(2n){
+        flex-wrap: wrap;
+    }
+    .left-side-advantages:nth-child(2n) .orange-bg-wrapper{
+        position: relative;
+        width: 40%;
+    }
+    .left-side-advantages .orange-text-wrapper{
+        width: 80%;
+        margin-left: 20%;
+    }
+    .left-side-advantages .advantages-arrow-white-left{
+        width: 50px;
+        height: 40px;
+        left: 0;
+    }
+    .left-side-advantages .advantages-arrow-orange-left{
+        width: 50px;
+        height: 40px;
+        left: 20px;
+    }
+    .left-side-advantages:nth-child(2n) .orange-text-wrapper{
+        width: 80%;
+        margin-right: 20%;
+        margin-top: 50px;
+    }
+    .left-side-advantages:nth-child(2n) .advantages-arrow-white-left{
+        width: 50px;
+        height: 40px;
+        right: 0;
+        left: 425px;
+        top: 50px;
+    }
+    .left-side-advantages:nth-child(2n) .advantages-arrow-orange-left{
+        width: 50px;
+        height: 40px;
+        right: 0;
+        left: 400px;
+        top: 40px;
+    }
+    .advantages-arrow-wrapper{
+        width: 100%;
+        position: relative;
+    }
+    .orange-text-wrapper{
+        width: 100%;
+    }
+    .additional-info-wrapper {
+        width: 425px;
+    }
+    .about-service-wrapper {
+        width: 425px;
+    }
+    .about-service-left{
+        width: 100%;
+    }
+    .about-service-right{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .steps_wrapper {
+        max-width: 425px;
+    }
+}
+@media (max-width: 500px) {
+    .header-banner{
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .header-banner-first-title{
+        font-size: 2.4rem;
+    }
+    .header-banner-second-title{
+        color: white;
+        font-size: 2rem;
+        word-break: break-all;
+    }
+
+    .header-banner-text{
+        width: 90%;
+    }
+    .advantages-wrapper {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .left-side-advantages:nth-child(2n) .advantages-arrow-white-left{
+        width: 50px;
+        height: 40px;
+        right: 0;
+        left: 300px;
+        top: 50px;
+    }
+    .left-side-advantages:nth-child(2n) .advantages-arrow-orange-left{
+        width: 50px;
+        height: 40px;
+        right: 0;
+        left: 280px;
+        top: 40px;
+    }
+    .left-side-advantages:nth-child(2n) .orange-bg-wrapper{
+        position: relative;
+        width: 80%;
+    }
+    .additional-info-wrapper {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .about-service-wrapper {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .about-service-text-empty{
+        font-size: 1.3rem;
+    }
+	
+	.back-header-service {
+    position: absolute;
+    left: -3px;
+    top: -25px;
+    max-width: 375px;
+    max-height: 879px;
+}
+}
+@media (max-width: 389px) {
+
+    .left-side-advantages:nth-child(2n) .ad-back{
+        position: absolute;
+        width: 365px;
+        left: -126px;
+        top: -67px;
+    }
+	.ad-back-right {
+		position: absolute;
+		width: 365px;
+		left: -126px;
+		top: -67px;
+	}
+	
+	.back-header-service {
+		position: absolute;
+		left: -33px;
+		top: -50px;
+		max-width: 322px;
+		max-height: 997px;
+	}
+    .advantages-arrow-orange-left{
+        display: none;
+    }
+    .advantages-arrow-white-left{
+        display: none;
+    }
+    .header-banner-first-title{
+        font-size: 1.8rem;
+    }
+    .advantages-title-left{
+        font-size: .9rem;
+    }
+}

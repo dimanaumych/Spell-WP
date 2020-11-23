@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/Montserrat-Regular.woff') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff')
+}
+
+
+a {
+    text-decoration: none;
+}
+    .left_sidebar{
+        display: none;
+    }
+.header-wrapper{
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.header-menu-wrapper{
+    width: 100%;
+    position: relative;
+}
+header{
+    width: 1190px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: black;
+    justify-content: space-between;
+    font-size: .9rem;
+    position: relative;
+    z-index: 9;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+header ul{
+    margin-left: 10px;
+}
+header ul a{
+    height: 30px;
+    line-height: 30px;
+    color: black;
+}
+header ul a:hover{
+    background: linear-gradient(0deg, #E94E1B 50%, white 50%);
+}
+.call-back-button-header{
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: linear-gradient(90deg, #E94E1B 50%, white 50%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.header-menu {
+    display: flex;
+}
+.header-menu ul{
+    display: flex;
+}
+.header-menu li{
+    margin-left: 17px;
+    margin-right: 17px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: normal;
+}
+.header-menu li:hover{
+    color: black;
+}
+header select{
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+header option{
+    background: none;
+    color: black;
+}
+.header-phone-number{
+    margin-left: 80px;
+}
+.laguage-select{
+    padding-right: 10px;
+}
+.phone-select{
+    padding-right: 10px;
+}
+.mobile-menu-phone-wrapper{
+    margin-top: 30px;
+}
+
+@media (max-width: 1440px) {
+    header {
+        width: 1000px;
+        height: 100px;
+    }
+    .header-phone-number{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    header {
+        width: 760px;
+        height: 100px;
+    }
+    .header-phone-number{
+        display: none;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    .laguage-select {
+        display: none;
+    }
+
+    .header-menu li {
+        margin-left: 7px;
+        margin-right: 7px;
+        font-size: .95rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+}
+@media (max-width: 769px) {
+    header {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .codrops-demos_sidebar .header-menu{
+        display: flex;
+		justify-content: center;
+    }
+	
+	
+    .codrops-demos_sidebar .header-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .call-back-button-header {
+        width: 150px;
+        margin-left: 70px;
+        font-size: .85rem;
+    }
+
+    .header-phone-number {
+        display: unset;
+        margin-left: 50px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    /* BURGER MENU */
+    .left_sidebar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        color: black;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        align-items: center;
+        transition: 0.5s;
+        transform: translateX(100%);
+        /*overflow-x: hidden;*/
+        /*overflow-y: auto;*/
+    }
+
+    .left_sidebar a {
+        color: black;
+    }
+
+    .mobile-menu-header-logo {
+        width: 200px;
+    }
+
+    /* Demo Buttons Style */
+    .codrops-demos {
+        width: 100%;
+        padding-top: 1em;
+        font-size: 20px;
+        font-family: Montserrat;
+    }
+
+    .codrops-demos a {
+        display: inline-block;
+        margin: 0.35em 0.1em;
+        padding: 0.5em 1.2em;
+        outline: none;
+        text-decoration: none;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        font-size: 20px;
+        border: 2px solid transparent;
+    }
+
+    .codrops-demos_sidebar a {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        outline: none;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        color: black;
+    }
+
+    .codrops-demos_sidebar {
+        font-family: 'Montserrat';
+        /*position: absolute;*/
+        width: 100%;
+        top: 20%;
+        bottom: 20%;
+        padding-top: 1em;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        margin-top: 70px;
+    }
+
+    .menu_button {
+        display: flex;
+        width: 50px;
+        height: auto;
+        position: absolute;
+        left: -80px;
+        top: 35px;
+        z-index: 1000;
+    }
+
+    .cancel_button {
+        width: 30px;
+        height: auto;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+    }
+
+    .menu_active {
+        transform: translateX(0%);
+    }
+
+    .content_active {
+        transform: translateX(-100%);
+    }
+
+    .mobile-menu-language-select {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-menu-social {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 650px) {
+    .header-phone-number{
+        display: none;
+    }
+    .call-back-button-header{
+        display: flex;
+        background: #E94E1B;
+        text-align: center;
+        justify-content: center;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 525px) {
+    .back-call{
+        display: none;
+    }
+    .logo{
+        width: 80px;
+        margin-left: 10%;
+    }
+
+    .call-back-button-header{
+        margin-left: 50px;
+    }
+
+}
+@media (max-width: 425px) {
+    header {
+        width: 95%;
+    }
+    .menu_button{
+        width: 40px;
+        top: 40px;
+    }
+    .call-back-button-header{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 390px) {
+    .mobile-menu-header-logo{
+        width: 150px;
+    }
+    .call-back-button-header{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 350px) {
+    .mobile-menu-header-logo{
+        width: 150px;
+    }
+    .call-back-button-header{
+        margin-left: 25px;
+        width: 110px;
+        font-size: .7rem;
+    }
+}
+@media (max-width: 330px) {
+    .call-back-button-header{
+        margin-left: 15px;
+    }
+}
+
+/* DROPDOWN MENU */
+/*#primary-menu ul li:nth-child(1):hover .sub-menu li{*/
+/*    display: flex;*/
+/*}*/
+.sub-menu{
+    display: none;!important;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.sub-menu li{
+    /*width: 100%;*/
+    display: none;
+    /*justify-content: flex-start;*/
+    /*margin: 0;*/
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+.sub-menu li a{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.sub-menu li:hover{
+    /*background: linear-gradient(0deg, #E94E1B 30%, transparent 70%);*/
+}
+.sub-menu li:last-child{
+    border: none;
+}
